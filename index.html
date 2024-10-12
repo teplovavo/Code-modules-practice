@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALAB 308A.5.1</title>
-    <script type="module" defer src="./script.js"></script>
+    <title>Card Matching Game - VERONIKA TEPLOVA</title>
+    <script type="module" src="./script.js"></script>
+    
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Code Modules</h1>
+    <h1>Card Matching Game</h1>
+
+    <button id="reset-button">Start new game</button>
+
+
+
+    <div class="game-container">
+        <div id="card-grid"></div>
+    </div>
+    
+
+<!-- if win -->
+<div id="win-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close-button">&times;</span>
+        <h2>CONGRATULATIONS!</h2>
+        <p>You DID IT!!!</p>
+       
+        <img src="./gif.gif" alt="Congrats" class="congrats-image">
+
+    </div>
+</div>
+
+<!-- enter your name ---  -->
+<div id="name-modal" class="modal">
+    <div class="modal-content">
+        <h2>Welcome!</h2>
+        <p>Enter your name:</p>
+        <input type="text" id="player-name" placeholder="Your name">
+        <button id="start-game">Start the game</button>
+        <p id="name-error" class="error-message"></p>
+    </div>
+</div>
+</br>
+</br>
+<div id="timer">Time: 0 sec</div>
+
+</br>
+</br>
+
+
+
+
+    
+<button id="hint-button">Give me a hint</button>
+
+
+</br>
+</br>
+
+</br>
+</br>
+</br>
+</br>
 </body>
 </html>
